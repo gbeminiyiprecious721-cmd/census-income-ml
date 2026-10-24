@@ -1,0 +1,23 @@
+{
+  "browser": "Chrome",
+  "url": "http://127.0.0.1:8501/",
+  "verified_pages": [
+    "Research Overview",
+    "Data Explorer",
+    "Model Performance",
+    "Model Explainability",
+    "Responsible AI Assessment",
+    "Prediction Sandbox"
+  ],
+  "hypothetical_prediction": {
+    "class": "<=50K",
+    "displayed_uncalibrated_score": 0.15
+  },
+  "narrow_viewport": {
+    "width": 390,
+    "height": 844,
+    "result": "Sidebar collapsed; form fields and submit button visible; override reset."
+  },
+  "screenshots_directory": "reports/screenshots",
+  "automated_controls": "50-test suite includes all views, diagnostic selectors, missing reports, unknown categories and prediction parity."
+}

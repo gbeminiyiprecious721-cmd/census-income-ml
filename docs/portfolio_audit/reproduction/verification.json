@@ -1,0 +1,23 @@
+{
+  "isolated_project": "[TEMP_PATH]",
+  "authoritative_artifacts_modified": false,
+  "policy": "record",
+  "exit_code": 0,
+  "seconds": 198.28,
+  "source_hashes": {
+    "src/census_income/config.py": "3f67dc6e241c6341ff6343f6041a7dbf2f543a6c253d9c47c7b746af17493c47",
+    "src/census_income/research.py": "c206bcdc6721bfee1300f0b31b31608c299f6539a51c764b31635d508567c4f3",
+    "src/census_income/__init__.py": "c502470be631c3f72c7269a5fcebacdb18171b5fc543389ee7b785352eb424b1",
+    "src/census_income/snapshot_inference.py": "74251d08f8c2ac65cfcb05f11eaa9a0cc60ded92b6ad297d750ca94623d5cd38",
+    "src/census_income/features.py": "fc7f2085af262c955a2759eaafada2ac9138fdafb6c7699b9bd83606d0ec5ad6",
+    "src/census_income/preprocessing.py": "0dab7e684e229449cfca816aaa4b87645070fe63c6a7de306b5fa86e11dcd07f",
+    "src/census_income/train.py": "7cb720f9164ec236fa48aa18844debb6e5f143fca873fa74a281b4f08c98387c",
+    "src/census_income/inference.py": "73083b52b75265880ed9c1839cd7d52b4744c65c9e83d128bd6cdb7a5a054fa4",
+    "src/census_income/evaluate.py": "b08ad5398b5973765a10c7995bb4df1c716e8566bae876ebff8702fc03fd2441",
+    "src/census_income/explainability.py": "1c1d1f1e433e9d259c5b2b4bd4638c0b172cef21f83cdb640d25fd531a005461",
+    "src/census_income/run_store.py": "f2c5d544f58a825a31a60c8818b7cc57439e5bb43ac05d11263c0f98bd8ab25d",
+    "src/census_income/data.py": "f623b0912775db7cc995f5763b4030fc8fa5684e378147481c2455a634d41a32"
+  },
+  "python": "3.12.15 (main, Oct 21 2026, 17:38:27) [Clang 23.1.3 ]",
+  "platform": "darwin"
+}

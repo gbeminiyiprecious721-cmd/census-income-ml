@@ -1,0 +1,251 @@
+{
+  "captures": [
+    {
+      "page": "Research Overview",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Data Explorer",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Model Performance",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Model Explainability",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Responsible AI Assessment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Prediction Sandbox",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Research Overview",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Data Explorer",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Model Performance",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Model Explainability",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Responsible AI Assessment",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Prediction Sandbox",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "main": {
+        "height": 1080,
+        "scrollHeight": 1080,
+        "width": 1685,
+        "scrollWidth": 1685
+      }
+    },
+    {
+      "page": "Research Overview",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1508,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    },
+    {
+      "page": "Data Explorer",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1154,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    },
+    {
+      "page": "Model Performance",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1250,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    },
+    {
+      "page": "Model Explainability",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1059,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    },
+    {
+      "page": "Responsible AI Assessment",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1301,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    },
+    {
+      "page": "Prediction Sandbox",
+      "viewport": [
+        1024,
+        768
+      ],
+      "main": {
+        "height": 768,
+        "scrollHeight": 1247,
+        "width": 789,
+        "scrollWidth": 789
+      }
+    }
+  ],
+  "checks": [
+    "Default JSON export: 9,758 held-out records",
+    "Population/model/reset/keyboard threshold recompute exported results",
+    "Metric, comparison, split, refresh and reset controls operate",
+    "All five diagnostics, classification export, error inspection/export",
+    "Explorer filters, chart cross-selection, missingness, associations, record search/CSV/context",
+    "Importance selection/export and subgroup rates/export",
+    "Real frozen-pipeline submission, JSON export, result persistence and input reset",
+    "All six pages reachable using keyboard navigation; native focus retained",
+    "Reset defaults remain 0.50 after Refresh analysis (browser regression)",
+    "Plotly PNG download validated; zero browser console/HTTP errors on six-page navigation"
+  ],
+  "page_errors": []
+}

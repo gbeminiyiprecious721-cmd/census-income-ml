@@ -1,0 +1,163 @@
+{
+  "artifact_format": "census-income-pipeline-v1",
+  "package_version": "0.1.0",
+  "model_version": "20261022T103759Z",
+  "created_utc": "2026-10-22T10:37:59.872507+00:00",
+  "python": "3.12.14",
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "sha256": "d8871c0839e8e9a9aef619e47d10a6922496fe23a6fc4cee2886fc251fb7f887",
+  "bytes": 6113711,
+  "model_inputs": [
+    "age",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "education-num",
+    "workclass",
+    "occupation",
+    "marital-status",
+    "relationship",
+    "native-country"
+  ],
+  "categorical_levels": {
+    "workclass": [
+      "Federal-gov",
+      "Local-gov",
+      "Never-worked",
+      "Private",
+      "Self-emp-inc",
+      "Self-emp-not-inc",
+      "State-gov",
+      "Without-pay"
+    ],
+    "occupation": [
+      "Adm-clerical",
+      "Armed-Forces",
+      "Craft-repair",
+      "Exec-managerial",
+      "Farming-fishing",
+      "Handlers-cleaners",
+      "Machine-op-inspct",
+      "Other-service",
+      "Priv-house-serv",
+      "Prof-specialty",
+      "Protective-serv",
+      "Sales",
+      "Tech-support",
+      "Transport-moving"
+    ],
+    "marital-status": [
+      "Divorced",
+      "Married-AF-spouse",
+      "Married-civ-spouse",
+      "Married-spouse-absent",
+      "Never-married",
+      "Separated",
+      "Widowed"
+    ],
+    "relationship": [
+      "Husband",
+      "Not-in-family",
+      "Other-relative",
+      "Own-child",
+      "Unmarried",
+      "Wife"
+    ],
+    "native-country": [
+      "Cambodia",
+      "Canada",
+      "China",
+      "Columbia",
+      "Cuba",
+      "Dominican-Republic",
+      "Ecuador",
+      "El-Salvador",
+      "England",
+      "France",
+      "Germany",
+      "Greece",
+      "Guatemala",
+      "Haiti",
+      "Holand-Netherlands",
+      "Honduras",
+      "Hong",
+      "Hungary",
+      "India",
+      "Iran",
+      "Ireland",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Laos",
+      "Mexico",
+      "Nicaragua",
+      "Outlying-US(Guam-USVI-etc)",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Puerto-Rico",
+      "Scotland",
+      "South",
+      "Taiwan",
+      "Thailand",
+      "Trinadad&Tobago",
+      "United-States",
+      "Vietnam",
+      "Yugoslavia"
+    ]
+  },
+  "decision_rule": "RandomForest argmax; class 0 on exact probability ties",
+  "source_year": 1994,
+  "calibrated": false,
+  "metadata": {
+    "run_id": "20261022T103759Z",
+    "training_mode": "full development-only research search",
+    "selected_feature_group": "Expanded + interaction",
+    "parameters": {
+      "forest__n_estimators": 100,
+      "forest__min_samples_split": 10,
+      "forest__min_samples_leaf": 1,
+      "forest__max_features": 1.0,
+      "forest__max_depth": 20,
+      "forest__class_weight": "balanced_subsample"
+    },
+    "test_metrics": {
+      "accuracy": 0.8322402131584341,
+      "precision": 0.6126329358685143,
+      "recall": 0.8137842465753424,
+      "f1": 0.6990255561684133,
+      "roc_auc": 0.9141795564279466
+    },
+    "source_provenance": {
+      "adult.data": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+        "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+        "bytes": 3974305
+      },
+      "adult.test": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test",
+        "sha256": "a2a9044bc167a35b2361efbabec64e89d69ce82d9790d2980119aac5fd7e9c05",
+        "bytes": 2003153
+      }
+    },
+    "dataset_clean_rows": 48790,
+    "seed": 42,
+    "limitations": [
+      "Historical 1994 US Census data; no contemporary or temporal external evaluation.",
+      "Five folds reused for feature-group selection and a 12-configuration F1 search; no nested CV.",
+      "Two complete predictor profiles cross the preserved split with conflicting labels; person identifiers are unavailable.",
+      "Scores are uncalibrated; threshold comparisons are diagnostics, not test-selected policies.",
+      "Demographic error disparities and small subgroup denominators; incomplete intersectional evaluation.",
+      "Correlated and derived inputs complicate importance interpretation; importance is not causal.",
+      "The historical test set was previously inspected; this is a reproduction, not fresh independent confirmation.",
+      "No production, fairness or consequential-use readiness is established."
+    ]
+  }
+}

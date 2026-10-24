@@ -1,0 +1,70 @@
+{
+  ".gitignore": {
+    "sha256": "fc99b1e88de4a9a277d28755d3747100f2f2be15f1c6e983b313af80b305ef09",
+    "bytes": 102
+  },
+  "Adult_Income_Random_Forest_End_to_End.html": {
+    "sha256": "392265169598f1e5427f39656bd5e1d1ca07073b732ed438e2ec02abe04b58b5",
+    "bytes": 1237587
+  },
+  "Adult_Income_Random_Forest_End_to_End.ipynb": {
+    "sha256": "4b1b1d15cbcdf30fea0b31574999062e159c064adf4a5926e475a23be5b64860",
+    "bytes": 852423
+  },
+  "Adult_Income_Random_Forest_End_to_End.original.ipynb": {
+    "sha256": "e52077bf2e59dc33a1cf8e269e3c7efab05d54629c1a51657b1a65f39729890d",
+    "bytes": 20563
+  },
+  "Adult_Income_Random_Forest_End_to_End.pre_review.ipynb": {
+    "sha256": "78f837a4e1bfe58e096ebad734ec7bb153de558a7754f6e08f3144951409efd0",
+    "bytes": 583980
+  },
+  "append_scientific_review.py": {
+    "sha256": "2e3c42f9f3dbc7b39fe2c976fdae24793e26bf9fb036bab6d26cfa18291c4b2d",
+    "bytes": 22747
+  },
+  "build_notebook.py": {
+    "sha256": "6f8f8ca03157d02f3feb1bb76a4d9afccb9755d294059a3b4e5dcea6d58ed23b",
+    "bytes": 21788
+  },
+  "document_results.py": {
+    "sha256": "d06576c79f04983411da03bea19f0bdc6daf4e1a600bfde04c36308b5fee4b30",
+    "bytes": 10133
+  },
+  "document_scientific_review.py": {
+    "sha256": "d621383545aba356828f0b6344fafdb9f0253b4db433e99b140022338effa9c4",
+    "bytes": 12865
+  },
+  "execute_notebook.py": {
+    "sha256": "6cbad52ad5d92491231aa4111c933ff863b8d94f4e3a51ef2ede917720a3e8ee",
+    "bytes": 1512
+  },
+  "execution.log": {
+    "sha256": "ca5ced9141da1df517c1ded52fb61a66208189b3f7ba7e66fb486ee9b5de5c66",
+    "bytes": 3044
+  },
+  "original_notebook_inspection.txt": {
+    "sha256": "d62cb2144a87a7f87c2401cec486cffcd568308e7c28c52194bb081691f8f696",
+    "bytes": 16524
+  },
+  "README.md": {
+    "sha256": "e4f1a26c980ede5fea0ab0508f52683374c0abe83c798b82929ef4e50d1b7a51",
+    "bytes": 17174
+  },
+  "README.pre_review.md": {
+    "sha256": "8eb0146a9cfb1ec8a2b6d1c18f5ebd672f89eeb02bce7abc12df21937841ef9f",
+    "bytes": 8574
+  },
+  "requirements.txt": {
+    "sha256": "ec8e46d8124185265a545ba1effce4b6e6f0fd58915f9a54255ec9996a7370c2",
+    "bytes": 1351
+  },
+  "review_execution.log": {
+    "sha256": "2549c26fe46bf19aa933f98f18bd6187b63a30924c0b281254479f689387b93c",
+    "bytes": 3466
+  },
+  "verify_review_artifacts.py": {
+    "sha256": "1fb4987344f05ea3d10dc87a954a51400ca07d2cf00f4a7225b09f963d44712c",
+    "bytes": 2433
+  }
+}

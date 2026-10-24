@@ -1,0 +1,4 @@
+model,evaluation,n_estimators,max_depth,max_features,min_samples_split,min_samples_leaf,class_weight,accuracy,precision,recall,f1,roc_auc
+Fixed feature-comparison forest,Mean of five validation folds,100,16,sqrt,2,1,None,0.8605247673660232,0.7614967360861863,0.6078116639914393,0.6759952606317583,0.9135856311271532
+F1-selected search forest,Mean of same five validation folds,100,20,1.0,10,1,balanced_subsample,0.8340337926365444,0.6168034381540162,0.8102728731942215,0.7004175050400279,0.9124071606378272
+F1-selected search forest,Refit on development; held-out test,100,20,1.0,10,1,balanced_subsample,0.8322402131584341,0.6126329358685143,0.8137842465753424,0.6990255561684133,0.9141795564279465

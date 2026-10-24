@@ -1,0 +1,22 @@
+{
+  "original_files_checked": 336,
+  "protected_data_artifact_report_archive_files": 170,
+  "protected_modified": [],
+  "intentional_modified_files": [
+    "pyproject.toml",
+    "README.md",
+    "tests/test_core.py",
+    "docs/data_card.md",
+    "docs/deployment_preparation.md",
+    "scripts/verify_dashboard_browser.py",
+    "scripts/finalize_delivery.py",
+    "scripts/create_research_notebook.py",
+    "notebooks/01_income_classification_research.ipynb",
+    "src/census_income/research.py",
+    "src/census_income/train.py",
+    "src/census_income_ml.egg-info/PKG-INFO",
+    "src/census_income_ml.egg-info/SOURCES.txt"
+  ],
+  "notebook_code_unchanged": true,
+  "note": "Notebook public-data access prose corrected; original executed code and scientific artifacts retained. New refits are isolated."
+}

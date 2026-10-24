@@ -1,0 +1,39 @@
+{
+  "saved_artifact_metrics_verified": {
+    "accuracy": 0.8322402131584341,
+    "precision": 0.6126329358685143,
+    "recall": 0.8137842465753424,
+    "f1": 0.6990255561684133,
+    "roc_auc": 0.9141795564279466
+  },
+  "confusion": {
+    "tn": 6220,
+    "fp": 1202,
+    "fn": 435,
+    "tp": 1901
+  },
+  "rows": 48790,
+  "test_rows": 9758,
+  "split": {
+    "index_overlap": 0,
+    "full_record_overlap": 0,
+    "predictor_profile_overlap": 2,
+    "conflicting_cross_split_profiles": 2,
+    "interpretation": "Profile overlap is an independence/data-quality concern; person identity is unavailable."
+  },
+  "calibration": {
+    "brier_score": 0.11132067134141932,
+    "log_loss": 0.3583824019279584,
+    "ece_10_equal_width_bins": 0.0830994142016365,
+    "interpretation": "Descriptive test calibration diagnostic; no calibrator fitted and no calibrated probabilities claimed."
+  },
+  "subgroup_rows_verified": 7,
+  "intersectional_groups": 10,
+  "minimum_intersection_n": 32,
+  "threshold_rows_verified": 5,
+  "permutation_summary_verified": true,
+  "notebook_code_sha256": "bced15a65e881bca9c8a1e01d505802cae06495e881bf938c0c65b86b29008e5",
+  "notebook_code_cells": 14,
+  "interpretation": "Saved model reproduction, not independent validation. Intersectional estimates are descriptive with small denominators; no fairness certification.",
+  "training_performed": false
+}

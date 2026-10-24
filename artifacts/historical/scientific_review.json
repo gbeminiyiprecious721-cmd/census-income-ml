@@ -1,0 +1,68 @@
+{
+  "prior_metrics_reproduced": true,
+  "preprocessing_statistics_verified": true,
+  "fixed_model_cv_accuracy": 0.8605247673660232,
+  "selected_model_cv": {
+    "accuracy": 0.8340337926365444,
+    "precision": 0.6168034381540162,
+    "recall": 0.8102728731942215,
+    "f1": 0.7004175050400279,
+    "roc_auc": 0.9124071606378272
+  },
+  "selected_model_test": {
+    "accuracy": 0.8322402131584341,
+    "precision": 0.6126329358685143,
+    "recall": 0.8137842465753424,
+    "f1": 0.6990255561684133,
+    "roc_auc": 0.9141795564279465
+  },
+  "accuracy_gap_percentage_points": {
+    "total": 2.828455420758913,
+    "configuration_and_objective": 2.649097472947881,
+    "selected_model_cv_minus_test": 0.17935794781103187
+  },
+  "heldout_rows": 9758,
+  "permutation_repeats": 10,
+  "permutation_f1_top_five": [
+    "marital-status",
+    "capital-gain",
+    "hours_age_interaction",
+    "occupation",
+    "education_bin"
+  ],
+  "aggregated_impurity_top_five": [
+    "marital-status",
+    "capital-gain",
+    "hours_age_interaction",
+    "education_bin",
+    "occupation"
+  ],
+  "permutation_impurity_rank_spearman": 0.9727272727272729,
+  "shared_full_predictor_profiles": 2,
+  "thresholds": [
+    0.2,
+    0.35,
+    0.5,
+    0.65,
+    0.8
+  ],
+  "frozen_decision_rule": "probability > 0.50; class 0 on exact ties",
+  "subgroup_gaps": [
+    {
+      "attribute": "race",
+      "recall_tpr": 0.24615384615384617,
+      "fpr": 0.15465465465465464,
+      "precision": 0.2418098834992065,
+      "selection_rate": 0.2066681978257541
+    },
+    {
+      "attribute": "sex",
+      "recall_tpr": 0.17076359727753643,
+      "fpr": 0.19629263212468015,
+      "precision": 0.0626759553911872,
+      "selection_rate": 0.30681996661311606
+    }
+  ],
+  "model_changed_by_review": false,
+  "diagnostics_are_not_selection": true
+}

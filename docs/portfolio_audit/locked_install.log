@@ -1,0 +1,9 @@
+Using Python 3.12.15 environment at: /tmp/census-release-venv
+WARN `tornado==6.5.10` needs to be downloaded from a registry
+WARN `certifi==2026.10.19` needs to be downloaded from a registry
+WARN certifi needs to be downloaded from a registry
+WARN `soupsieve==3.0.3` needs to be downloaded from a registry
+error: No solution found when resolving dependencies
+  cause: Because certifi==2026.10.19 needs to be downloaded from a registry and you require certifi==2026.10.19, we can conclude that your requirements are unsatisfiable.
+
+hint: Packages were unavailable because the network was disabled. When the network is disabled, registry packages may only be read from the cache.

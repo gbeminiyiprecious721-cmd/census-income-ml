@@ -1,0 +1,166 @@
+[
+  {
+    "jobs": 1,
+    "seconds": 9.96415901184082,
+    "metrics": {
+      "accuracy": 0.8325476532076245,
+      "precision": 0.613225806451613,
+      "recall": 0.8137842465753424,
+      "f1": 0.6994113318616629,
+      "roc_auc": 0.9141467956242639
+    },
+    "changed_classes": 11,
+    "max_abs_score_difference": 0.06,
+    "changed_examples": [
+      {
+        "index": 47387,
+        "actual": 0,
+        "saved_score": 0.5048905207298866,
+        "refit_score": 0.4959634507311421
+      },
+      {
+        "index": 1155,
+        "actual": 0,
+        "saved_score": 0.4840634781133763,
+        "refit_score": 0.5057768541794784
+      },
+      {
+        "index": 11529,
+        "actual": 0,
+        "saved_score": 0.5002163648080812,
+        "refit_score": 0.4801659845631757
+      },
+      {
+        "index": 45367,
+        "actual": 0,
+        "saved_score": 0.501277888026269,
+        "refit_score": 0.49866320153467997
+      },
+      {
+        "index": 25289,
+        "actual": 0,
+        "saved_score": 0.496532582440546,
+        "refit_score": 0.5015434995285515
+      },
+      {
+        "index": 43675,
+        "actual": 0,
+        "saved_score": 0.5018428247791433,
+        "refit_score": 0.4982072171968489
+      },
+      {
+        "index": 39233,
+        "actual": 0,
+        "saved_score": 0.48946336572817756,
+        "refit_score": 0.5069366779140357
+      },
+      {
+        "index": 5295,
+        "actual": 0,
+        "saved_score": 0.5062146354171757,
+        "refit_score": 0.4981471972367292
+      },
+      {
+        "index": 16135,
+        "actual": 0,
+        "saved_score": 0.4873015592035192,
+        "refit_score": 0.5114948017726844
+      },
+      {
+        "index": 5590,
+        "actual": 0,
+        "saved_score": 0.507365859292834,
+        "refit_score": 0.49736585929283395
+      },
+      {
+        "index": 35184,
+        "actual": 0,
+        "saved_score": 0.5078963380030652,
+        "refit_score": 0.49196474659302913
+      }
+    ]
+  },
+  {
+    "jobs": 4,
+    "seconds": 2.855780839920044,
+    "metrics": {
+      "accuracy": 0.8325476532076245,
+      "precision": 0.613225806451613,
+      "recall": 0.8137842465753424,
+      "f1": 0.6994113318616629,
+      "roc_auc": 0.9141467956242639
+    },
+    "changed_classes": 11,
+    "max_abs_score_difference": 0.06,
+    "changed_examples": [
+      {
+        "index": 47387,
+        "actual": 0,
+        "saved_score": 0.5048905207298866,
+        "refit_score": 0.4959634507311421
+      },
+      {
+        "index": 1155,
+        "actual": 0,
+        "saved_score": 0.4840634781133763,
+        "refit_score": 0.5057768541794784
+      },
+      {
+        "index": 11529,
+        "actual": 0,
+        "saved_score": 0.5002163648080812,
+        "refit_score": 0.4801659845631757
+      },
+      {
+        "index": 45367,
+        "actual": 0,
+        "saved_score": 0.501277888026269,
+        "refit_score": 0.49866320153467997
+      },
+      {
+        "index": 25289,
+        "actual": 0,
+        "saved_score": 0.496532582440546,
+        "refit_score": 0.5015434995285515
+      },
+      {
+        "index": 43675,
+        "actual": 0,
+        "saved_score": 0.5018428247791433,
+        "refit_score": 0.4982072171968489
+      },
+      {
+        "index": 39233,
+        "actual": 0,
+        "saved_score": 0.48946336572817756,
+        "refit_score": 0.5069366779140357
+      },
+      {
+        "index": 5295,
+        "actual": 0,
+        "saved_score": 0.5062146354171757,
+        "refit_score": 0.4981471972367292
+      },
+      {
+        "index": 16135,
+        "actual": 0,
+        "saved_score": 0.4873015592035192,
+        "refit_score": 0.5114948017726844
+      },
+      {
+        "index": 5590,
+        "actual": 0,
+        "saved_score": 0.507365859292834,
+        "refit_score": 0.49736585929283395
+      },
+      {
+        "index": 35184,
+        "actual": 0,
+        "saved_score": 0.5078963380030652,
+        "refit_score": 0.49196474659302913
+      }
+    ],
+    "max_abs_same_platform_difference": 3.3306690738754696e-16,
+    "same_platform_class_changes": 0
+  }
+]

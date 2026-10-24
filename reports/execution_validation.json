@@ -1,0 +1,24 @@
+{
+  "clean_kernel": true,
+  "code_cells": 14,
+  "sequential_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "error_outputs": 0,
+  "seconds": 1364.18,
+  "embedded_figures": 8,
+  "code_sha256": "bced15a65e881bca9c8a1e01d505802cae06495e881bf938c0c65b86b29008e5"
+}

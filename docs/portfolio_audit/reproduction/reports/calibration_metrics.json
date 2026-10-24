@@ -1,0 +1,6 @@
+{
+  "brier_score": 0.11132907182812256,
+  "log_loss": 0.35850476652551055,
+  "ece_10_equal_width_bins": 0.08321444422041031,
+  "interpretation": "Descriptive test calibration diagnostic; no calibrator fitted and no calibrated probabilities claimed."
+}

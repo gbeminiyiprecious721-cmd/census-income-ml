@@ -1,0 +1,6 @@
+{
+  "complete_predictor_profiles_crossing_split": 2,
+  "crossing_profiles_with_conflicting_income_labels": 2,
+  "threshold_and_subgroup_metric_arithmetic_verified": true,
+  "subgroup_confusion_totals_reconciled": true
+}

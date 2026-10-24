@@ -1,0 +1,22 @@
+name: Project checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip check
+      - run: python scripts/publish_run.py
+      - run: python -m pytest -q
+      - run: python scripts/audit_project.py --output /tmp/frozen-audit
+# Full notebook search is deliberately opt-in and isolated:
+# python scripts/verify_research.py --record-differences
+# This workflow has not run on GitHub until the repository is actually published.

@@ -1,0 +1,41 @@
+NAV 0
+NAV 1
+NAV 2
+NAV 3
+NAV 4
+NAV 5
+NAV 0
+CLICK Reset filters
+CLICK Reset filters
+CLICK Refresh analysis
+NAV 2
+CLICK Classification report
+CLICK Errors
+CLICK Inspect public-source error records
+NAV 1
+CLICK Missingness
+CLICK Associations
+CLICK Distributions
+CLICK Reset filters
+CLICK Browse & export
+NAV 3
+NAV 4
+NAV 5
+CLICK Classify hypothetical record
+NAV 0
+NAV 5
+CLICK Reset inputs
+{
+  "captures": 6,
+  "checks": [
+    "Default JSON export: 9,758 held-out records",
+    "Population/model/reset/keyboard threshold recompute exported results",
+    "Metric, comparison, split, refresh and reset controls operate",
+    "All five diagnostics, classification export, error inspection/export",
+    "Explorer filters, chart cross-selection, missingness, associations, record search/CSV/context",
+    "Importance selection/export and subgroup rates/export",
+    "Real frozen-pipeline submission, JSON export, result persistence and input reset",
+    "All six pages reachable using keyboard navigation; native focus retained"
+  ],
+  "errors": []
+}

@@ -1,0 +1,23 @@
+# Premium research identity: ivory workspace, graphite navigation, emerald analytics.
+[theme]
+base = "light"
+primaryColor = "#19816E"
+backgroundColor = "#F7F5F0"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#27332F"
+font = "sans-serif"
+baseFontSize = 14
+headingFontSizes = ["32px", "22px", "16px", "15px", "14px", "12px"]
+metricValueFontSize = "1.8rem"
+baseRadius = "0.7rem"
+showWidgetBorder = true
+paddingTop = "0.8rem"
+paddingBottom = "0.5rem"
+chartCategoricalColors = ["#19816E", "#35A7A0", "#E78168", "#B7739B", "#E7AB56", "#8F7CB7"]
+[theme.sidebar]
+backgroundColor = "#252C29"
+secondaryBackgroundColor = "#343F39"
+textColor = "#F1F3EC"
+primaryColor = "#8BD3B7"
+paddingTop = "1.3rem"
+paddingBottom = "0.5rem"

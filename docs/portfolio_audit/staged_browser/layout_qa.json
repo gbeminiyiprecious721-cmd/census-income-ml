@@ -1,0 +1,80 @@
+[
+  {
+    "page": "Research Overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  },
+  {
+    "page": "Data Explorer",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  },
+  {
+    "page": "Model Performance",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  },
+  {
+    "page": "Model Explainability",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  },
+  {
+    "page": "Responsible AI Assessment",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  },
+  {
+    "page": "Prediction Sandbox",
+    "viewport": [
+      1440,
+      900
+    ],
+    "main": {
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 1205,
+      "scrollWidth": 1205
+    }
+  }
+]

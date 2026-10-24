@@ -1,0 +1,32 @@
+{
+  "code_cells": 14,
+  "sequential_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "original_code_cells_unchanged": true,
+  "error_outputs": 0,
+  "embedded_figures": 11,
+  "scientific_review_present": true,
+  "prior_metric_checks_passed": true,
+  "max_all_search_mean_metric_reproduction_difference": 1.4420192506747753e-07,
+  "all_search_mean_metric_differences": {
+    "mean_test_accuracy": 0.0,
+    "mean_test_precision": 0.0,
+    "mean_test_recall": 0.0,
+    "mean_test_f1": 0.0,
+    "mean_test_roc_auc": 1.4420192506747753e-07
+  }
+}

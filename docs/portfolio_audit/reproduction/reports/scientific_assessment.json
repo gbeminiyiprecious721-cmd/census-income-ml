@@ -1,0 +1,29 @@
+{
+  "configuration_accuracy_difference_pp": 2.6490978011317723,
+  "selected_cv_test_accuracy_difference_pp": 0.133239839995003,
+  "independence": {
+    "index_overlap": 0,
+    "full_record_overlap": 0,
+    "predictor_profile_overlap": 2,
+    "conflicting_cross_split_profiles": 2,
+    "interpretation": "Profile overlap is an independence/data-quality concern; person identity is unavailable.",
+    "development_rows": 39032,
+    "test_rows": 9758
+  },
+  "calibration": {
+    "brier_score": 0.11132907182812256,
+    "log_loss": 0.35850476652551055,
+    "ece_10_equal_width_bins": 0.08321444422041031,
+    "interpretation": "Descriptive test calibration diagnostic; no calibrator fitted and no calibrated probabilities claimed."
+  },
+  "permutation_top_five": [
+    "marital-status",
+    "capital-gain",
+    "hours_age_interaction",
+    "occupation",
+    "education_bin"
+  ],
+  "model_changed_from_historical_selection": false,
+  "threshold_selected_from_test": false,
+  "interpretation": "Arithmetic separation of model/configuration and evaluation differences; not causal attribution."
+}

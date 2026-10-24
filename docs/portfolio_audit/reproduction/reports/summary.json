@@ -1,0 +1,300 @@
+{
+  "run_id": "20261024T131419Z",
+  "status": "executed and validated",
+  "model_version": "20261024T131419Z",
+  "dataset": {
+    "raw_rows": 48842,
+    "raw_columns": 15,
+    "clean_rows": 48790,
+    "duplicates_removed": 52,
+    "source_year": 1994,
+    "missing_before_deduplication": {
+      "age": 0,
+      "workclass": 2799,
+      "fnlwgt": 0,
+      "education": 0,
+      "education-num": 0,
+      "marital-status": 0,
+      "occupation": 2809,
+      "relationship": 0,
+      "race": 0,
+      "sex": 0,
+      "capital-gain": 0,
+      "capital-loss": 0,
+      "hours-per-week": 0,
+      "native-country": 857,
+      "income": 0
+    },
+    "dtypes": {
+      "age": "int64",
+      "workclass": "str",
+      "fnlwgt": "int64",
+      "education": "str",
+      "education-num": "int64",
+      "marital-status": "str",
+      "occupation": "str",
+      "relationship": "str",
+      "race": "str",
+      "sex": "str",
+      "capital-gain": "int64",
+      "capital-loss": "int64",
+      "hours-per-week": "int64",
+      "native-country": "str",
+      "income": "str"
+    },
+    "categories": {
+      "workclass": [
+        "Federal-gov",
+        "Local-gov",
+        "Never-worked",
+        "Private",
+        "Self-emp-inc",
+        "Self-emp-not-inc",
+        "State-gov",
+        "Without-pay"
+      ],
+      "education": [
+        "10th",
+        "11th",
+        "12th",
+        "1st-4th",
+        "5th-6th",
+        "7th-8th",
+        "9th",
+        "Assoc-acdm",
+        "Assoc-voc",
+        "Bachelors",
+        "Doctorate",
+        "HS-grad",
+        "Masters",
+        "Preschool",
+        "Prof-school",
+        "Some-college"
+      ],
+      "marital-status": [
+        "Divorced",
+        "Married-AF-spouse",
+        "Married-civ-spouse",
+        "Married-spouse-absent",
+        "Never-married",
+        "Separated",
+        "Widowed"
+      ],
+      "occupation": [
+        "Adm-clerical",
+        "Armed-Forces",
+        "Craft-repair",
+        "Exec-managerial",
+        "Farming-fishing",
+        "Handlers-cleaners",
+        "Machine-op-inspct",
+        "Other-service",
+        "Priv-house-serv",
+        "Prof-specialty",
+        "Protective-serv",
+        "Sales",
+        "Tech-support",
+        "Transport-moving"
+      ],
+      "relationship": [
+        "Husband",
+        "Not-in-family",
+        "Other-relative",
+        "Own-child",
+        "Unmarried",
+        "Wife"
+      ],
+      "race": [
+        "Amer-Indian-Eskimo",
+        "Asian-Pac-Islander",
+        "Black",
+        "Other",
+        "White"
+      ],
+      "sex": [
+        "Female",
+        "Male"
+      ],
+      "native-country": [
+        "Cambodia",
+        "Canada",
+        "China",
+        "Columbia",
+        "Cuba",
+        "Dominican-Republic",
+        "Ecuador",
+        "El-Salvador",
+        "England",
+        "France",
+        "Germany",
+        "Greece",
+        "Guatemala",
+        "Haiti",
+        "Holand-Netherlands",
+        "Honduras",
+        "Hong",
+        "Hungary",
+        "India",
+        "Iran",
+        "Ireland",
+        "Italy",
+        "Jamaica",
+        "Japan",
+        "Laos",
+        "Mexico",
+        "Nicaragua",
+        "Outlying-US(Guam-USVI-etc)",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Portugal",
+        "Puerto-Rico",
+        "Scotland",
+        "South",
+        "Taiwan",
+        "Thailand",
+        "Trinadad&Tobago",
+        "United-States",
+        "Vietnam",
+        "Yugoslavia"
+      ],
+      "income": [
+        "<=50K",
+        ">50K"
+      ]
+    },
+    "target_distribution": {
+      "<=50K": 37109,
+      ">50K": 11681
+    },
+    "provenance": {
+      "adult.data": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+        "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+        "bytes": 3974305
+      },
+      "adult.test": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test",
+        "sha256": "a2a9044bc167a35b2361efbabec64e89d69ce82d9790d2980119aac5fd7e9c05",
+        "bytes": 2003153
+      }
+    },
+    "transformations": [
+      "strip categorical whitespace",
+      "replace ? with missing",
+      "remove income terminal period",
+      "remove exact full-record duplicates"
+    ],
+    "independence": {
+      "index_overlap": 0,
+      "full_record_overlap": 0,
+      "predictor_profile_overlap": 2,
+      "conflicting_cross_split_profiles": 2,
+      "interpretation": "Profile overlap is an independence/data-quality concern; person identity is unavailable.",
+      "development_rows": 39032,
+      "test_rows": 9758
+    },
+    "development_rows": 39032,
+    "test_rows": 9758
+  },
+  "selected_feature_group": "Expanded + interaction",
+  "selected_parameters": {
+    "forest__n_estimators": 100,
+    "forest__min_samples_split": 10,
+    "forest__min_samples_leaf": 1,
+    "forest__max_features": 1.0,
+    "forest__max_depth": 20,
+    "forest__class_weight": "balanced_subsample"
+  },
+  "cv_metrics": {
+    "accuracy": 0.8338800516075745,
+    "precision": 0.6164946369049208,
+    "recall": 0.8102728731942215,
+    "f1": 0.7002183144428178,
+    "roc_auc": 0.9124090010070425
+  },
+  "test_metrics": {
+    "accuracy": 0.8325476532076245,
+    "precision": 0.613225806451613,
+    "recall": 0.8137842465753424,
+    "f1": 0.6994113318616629,
+    "roc_auc": 0.9141467956242639
+  },
+  "historical_reference": {
+    "label": "Previously reviewed measurements; not new independent data",
+    "best_cv_f1": 0.7004175050400279,
+    "test_metrics": {
+      "accuracy": 0.8322402131584341,
+      "precision": 0.6126329358685143,
+      "recall": 0.8137842465753424,
+      "f1": 0.6990255561684133,
+      "roc_auc": 0.9141795564279465
+    }
+  },
+  "reproduction": {
+    "matches_reported_precision": false,
+    "policy": "record",
+    "test_metric_differences": {
+      "accuracy": 0.00030744004919036616,
+      "precision": 0.000592870583098648,
+      "recall": 0.0,
+      "f1": 0.0003857756932496015,
+      "roc_auc": -3.276080368252998e-05
+    },
+    "feature_cv_max_abs_differences": {
+      "accuracy": 0.00046116729564749104,
+      "precision": 0.0011392508905071486,
+      "recall": 0.0010700909577314732,
+      "f1": 0.0011500766393292006,
+      "roc_auc": 7.57196774942015e-05
+    },
+    "best_cv_f1_difference": -0.00019919059721007493,
+    "note": "Shared record-local engineering moved inside the saved pipeline; same split, feature ordering, seeds and search space."
+  },
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "python": "3.12.15",
+  "python_executable": "[LOCAL_WORKSPACE]/CensusIncome-ML/.venv/bin/python",
+  "seed": 42,
+  "search_iterations": 12,
+  "model_sha256": "41c394e94e88e5a3c04965cd30a3993f565bbcc78e026f4bb8f2f39486beab9d",
+  "limitations": [
+    "Historical 1994 US Census data; no contemporary or temporal external evaluation.",
+    "Five folds reused for feature-group selection and a 12-configuration F1 search; no nested CV.",
+    "Two complete predictor profiles cross the preserved split with conflicting labels; person identifiers are unavailable.",
+    "Scores are uncalibrated; threshold comparisons are diagnostics, not test-selected policies.",
+    "Demographic error disparities and small subgroup denominators; incomplete intersectional evaluation.",
+    "Correlated and derived inputs complicate importance interpretation; importance is not causal.",
+    "The historical test set was previously inspected; this is a reproduction, not fresh independent confirmation.",
+    "No production, fairness or consequential-use readiness is established."
+  ],
+  "notebook_execution": {
+    "clean_kernel": true,
+    "code_cells": 14,
+    "sequential_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "error_outputs": 0,
+    "seconds": 197.53,
+    "embedded_figures": 8,
+    "code_sha256": "d04a5d13f1338f9e76fa69ef74c3b9b66a86629848c7a8541af00786e1240ead"
+  }
+}

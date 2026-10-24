@@ -1,0 +1,93 @@
+{
+  "captures": [
+    {
+      "page": "Research Overview",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Data Explorer",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Model Performance",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Model Explainability",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Responsible AI Assessment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    },
+    {
+      "page": "Prediction Sandbox",
+      "viewport": [
+        1440,
+        900
+      ],
+      "main": {
+        "height": 900,
+        "scrollHeight": 900,
+        "width": 1205,
+        "scrollWidth": 1205
+      }
+    }
+  ],
+  "checks": [
+    "Default JSON export: 9,758 held-out records",
+    "Population/model/reset/keyboard threshold recompute exported results",
+    "Metric, comparison, split, refresh and reset controls operate",
+    "All five diagnostics, classification export, error inspection/export",
+    "Explorer filters, chart cross-selection, missingness, associations, record search/CSV/context",
+    "Importance selection/export and subgroup rates/export",
+    "Real frozen-pipeline submission, JSON export, result persistence and input reset",
+    "All six pages reachable using keyboard navigation; native focus retained"
+  ],
+  "page_errors": []
+}
