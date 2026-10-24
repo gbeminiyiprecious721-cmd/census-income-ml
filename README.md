@@ -116,7 +116,7 @@ Feature-group selection and tuning reuse the same five folds, so the selected CV
 
 Becker, B. & Kohavi, R. (1996), *Adult*, [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult), [DOI 10.24432/C5XW20](https://doi.org/10.24432/C5XW20). Data: CC BY 4.0; software: [MIT](LICENSE). See [NOTICE](NOTICE).
 
-Only load maintainer-created artifacts. Checksums and dependency checks catch accidental corruption and incompatibility, not an attacker who replaces both model and manifest. Joblib is not a safe format for untrusted uploads. No credentials are required. Historical reports/notebook outputs retain original machine paths as provenance; execution uses checkout-relative paths.
+Only load maintainer-created artifacts. Checksums and dependency checks catch accidental corruption and incompatibility, not an attacker who replaces both model and manifest. Joblib is not a safe format for untrusted uploads. No credentials are required. The public copy redacts workstation paths and omits machine-specific diagnostic metadata; execution uses checkout-relative paths. See [publication notes](docs/PUBLICATION_NOTES.md).
 
 ## GitHub preparation
 
