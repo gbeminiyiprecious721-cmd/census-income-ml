@@ -10,7 +10,7 @@ import streamlit as st
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 sys.path.insert(0,str(ROOT/'app'))
-from census_income.run_store import SnapshotSession
+from census_income.run_store import BundleError, SnapshotSession, publish_existing
 from ui import apply_style
 from live_evaluation import score_snapshot
 from overview import render_overview
@@ -25,6 +25,22 @@ PAGES=['Research Overview','Data Explorer','Model Performance','Model Explainabi
 
 st.set_page_config(page_title='CensusIncome · Research Intelligence',page_icon=':material/analytics:',layout='wide')
 apply_style()
+
+
+@st.cache_resource(show_spinner='Validating saved research for first launch…')
+def initialize_default_store(project: str, store: str) -> None:
+    """Activate bundled trusted outputs once per process; never train."""
+    if not (Path(store)/'current.json').exists():
+        publish_existing(Path(project), Path(store))
+
+
+# Fresh hosting checkouts exclude the generated store. Explicit store/report
+# overrides retain their existing missing/invalid-evidence behavior.
+if not os.environ.get('CENSUS_APP_STORE_DIR') and not os.environ.get('CENSUS_APP_REPORTS_DIR'):
+    try:
+        initialize_default_store(str(ROOT), str(STORE))
+    except BundleError:
+        pass  # SnapshotSession below displays the actionable unavailable state.
 
 if st.session_state.get('research_snapshot_store')!=str(STORE):
     st.session_state.research_snapshot_session=SnapshotSession()
