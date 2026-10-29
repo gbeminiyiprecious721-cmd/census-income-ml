@@ -41,11 +41,11 @@ def kpis(items):
                 st.metric(label,value,help=help_text,border=True)
 
 
-def plot(fig, alt, key, height=300, selectable=False, on_select=None):
+def plot(fig, alt, key, height=300, selectable=False, on_select=None, *, legend=None, margin=None):
     fig.update_layout(height=height, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
         font=dict(family='Arial, sans-serif',size=12,color=INK),
-        margin=dict(l=20,r=20,t=18,b=30),
-        legend=dict(title_text='',orientation='h',y=1.13,x=0),
+        margin=margin if margin is not None else dict(l=20,r=20,t=18,b=30),
+        legend=legend if legend is not None else dict(title_text='',orientation='h',y=1.13,x=0),
         hoverlabel=dict(bgcolor='white',font_size=12),
         colorway=PALETTE, transition_duration=150)
     fig.update_xaxes(automargin=True,gridcolor='#EDF0E9',zeroline=False,title_font_size=11)

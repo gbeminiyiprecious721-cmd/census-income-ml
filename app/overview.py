@@ -85,9 +85,10 @@ def render_overview(snapshot, loaded_utc, scored=None):
         st.subheader('Prediction distribution',icon=':material/donut_large:')
         st.caption('Scenario classifications · not actual income composition')
         counts=result['counts'];negative=counts['tn']+counts['fn'];positive=counts['tp']+counts['fp']
-        fig=go.Figure(go.Pie(labels=['≤$50K','>$50K'],values=[negative,positive],hole=.72,marker_colors=[TEAL,PURPLE],textinfo='percent',textfont_size=11,sort=False))
-        fig.add_annotation(text=f"<b>{result['n']:,}</b><br>evaluated",x=.5,y=.5,showarrow=False,font_size=16)
-        fig.update_layout(legend=dict(orientation='h',y=-.1,x=.05))
-        plot(fig,'Predicted income class counts under the current scenario threshold','overview_distribution',145)
+        fig=go.Figure(go.Pie(labels=['≤$50K','>$50K'],values=[negative,positive],hole=.72,marker_colors=[TEAL,PURPLE],textinfo='percent',textposition='inside',textfont_size=11,sort=False))
+        fig.add_annotation(text=f"<b>{result['n']:,}</b>",x=.5,y=.5,showarrow=False,font_size=13)
+        plot(fig,'Predicted income class counts under the current scenario threshold','overview_distribution',220,
+             legend=dict(title_text='',orientation='h',y=-.12,yanchor='top',x=.5,xanchor='center'),
+             margin=dict(l=12,r=12,t=12,b=48))
     counts=result['counts']
     st.caption(f"RESEARCH INSIGHT · This scenario finds {counts['tp']:,} of {counts['tp']+counts['fn']:,} actual positives and flags {counts['fp']:,} actual negatives. Scores are uncalibrated; threshold changes are diagnostics, not a recommended policy.")

@@ -1,5 +1,4 @@
 /* User-authorized premium theme. Never hide overflow to simulate a single screen. */
-@font-face {font-family:ResearchIcons;src:url('/static/media/MaterialSymbols-Rounded.D_GK7ERd.woff2') format('woff2');font-weight:100 700;font-display:block;}
 [data-testid="stMainBlockContainer"] {max-width:1700px;padding-left:1.3rem;padding-right:1.3rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
 [data-testid="stMainBlockContainer"] [data-testid="stVerticalBlock"] {gap:.36rem;}
 [data-testid="stMainBlockContainer"] h1 {font-size:1.95rem;line-height:1.12;letter-spacing:-.045em;padding:0 0 .15rem;color:#24362F;}
@@ -14,13 +13,7 @@
 [data-testid="stMetric"] {background:linear-gradient(145deg,#FFFFFF,#F0F8F3);border:1px solid #DEE9E1;border-radius:13px;padding:.55rem .7rem;min-height:88px;}
 [data-testid="stMetricLabel"] {color:#52675B;font-size:.75rem;font-weight:500;}
 [data-testid="stMetricValue"] {letter-spacing:-.045em;font-weight:650;font-size:1.65rem;}
-[data-testid="stMetricLabel"]::before {font-family:ResearchIcons;content:'analytics';font-size:20px;line-height:26px;display:inline-block;width:26px;height:26px;border-radius:8px;text-align:center;color:#19816E;background:#DFF0E6;margin-right:6px;font-weight:400;}
 .st-key-kpi_test_precision [data-testid="stMetric"] {background:linear-gradient(145deg,#FFF,#EFF8F6);}
-.st-key-kpi_test_precision [data-testid="stMetricLabel"]::before {content:'verified';color:#238C86;background:#DEF0ED;}
-.st-key-kpi_test_recall [data-testid="stMetricLabel"]::before {content:'hub';color:#8F6AA9;background:#EEE4F3;}
-.st-key-kpi_test_f1 [data-testid="stMetricLabel"]::before {content:'balance';color:#B87332;background:#FFF0DB;}
-.st-key-kpi_test_roc_auc [data-testid="stMetricLabel"]::before {content:'show_chart';color:#C16D61;background:#FCE9E3;}
-.st-key-kpi_evaluated_samples [data-testid="stMetricLabel"]::before {content:'groups';color:#6F8269;background:#EAF0E5;}
 [data-testid="stSidebar"] {min-width:220px;max-width:235px;border-right:0;}
 [data-testid="stSidebar"] h2 {font-size:1.35rem;letter-spacing:-.035em;}
 [data-testid="stSidebar"] [data-testid="stCaptionContainer"] {color:#B2C2B5;}
@@ -42,12 +35,10 @@ div:has(> [data-testid="stVerticalBlock"][class*="st-key-panel_"]) {background:#
 [data-testid="stMainBlockContainer"] h3 {font-size:16px;}
 [data-testid="stHeading"] {padding-bottom:5px;}
 [data-testid="stMetricLabel"] {display:flex;align-items:center;flex-wrap:nowrap;gap:4px;}
-[data-testid="stMetricLabel"]::before {flex:0 0 24px;margin-right:0;}
 [data-testid="stMetricLabel"] [data-testid="stMarkdownContainer"] {min-width:0;}
 /* Native element wrappers must retain their content height inside flex panels. */
 [data-testid="stMainBlockContainer"] [data-testid="stElementContainer"] {flex-shrink:0;}
 [data-testid="stMainBlockContainer"] {padding-top:1.4rem;padding-bottom:1rem;}
-[data-testid="stMetricLabel"] {font-size:11px;}
 @media(max-width:1099px) {
  .st-key-analysis_controls [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
  .st-key-analysis_controls [data-testid="stColumn"] {min-width:180px;flex:1 1 28%;}
@@ -57,7 +48,7 @@ div:has(> [data-testid="stVerticalBlock"][class*="st-key-panel_"]) {background:#
 /* Streamlit's negative last-paragraph margin assumes its default paragraph spacing. */
 [data-testid="stMainBlockContainer"] [data-testid="stCaptionContainer"],
 [data-testid="stMainBlockContainer"] [data-testid="stMarkdownContainer"] {margin-bottom:0;}
-[data-testid="stMainBlockContainer"] [data-testid="stMetricLabel"] [data-testid="stMarkdownContainer"] p {font-size:10px;}
+[data-testid="stMainBlockContainer"] [data-testid="stMetricLabel"] [data-testid="stMarkdownContainer"] p {font-size:.75rem;line-height:1.35;white-space:normal;}
 .st-key-page_heading {gap:.15rem!important;}
 @media(max-width:1099px) {
  [data-testid="stMainBlockContainer"] [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
