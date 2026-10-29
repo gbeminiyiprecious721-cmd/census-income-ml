@@ -2,6 +2,8 @@
 
 A historical income-classification study with a reproducible ML pipeline and a six-page analytical dashboard. The saved forest finds **81.38%** of >$50K records at **61.26% precision**, with **0.9142 ROC-AUC**—a useful example of why accuracy alone hides an important precision–recall trade-off.
 
+**[Open the live Streamlit dashboard](https://census-income-precious-awolade.streamlit.app/)** · Public access; no sign-in required. The first visit after a restart may take a few minutes while the saved evidence is validated and scored. No training runs in the app.
+
 ![Research overview](docs/images/overview.png)
 
 **Start here:** [research notebook](notebooks/01_income_classification_research.ipynb) · [research report](docs/RESEARCH_REPORT.md) · [interview defense](docs/INTERVIEW_DEFENSE.md) · [audit evidence](docs/portfolio_audit/REPORT.md)
@@ -43,7 +45,7 @@ python scripts/publish_run.py
 python -m streamlit run app/main.py
 ```
 
-The source checkout, raw public UCI files, reports and small trusted model are included. Installation is editable; installing a wheel alone does not supply those external assets. The snapshot publication command validates and copies existing evidence locally; it neither trains nor publishes online. First uncached dashboard scoring takes roughly 20 seconds on the audited Mac.
+The source checkout, raw public UCI files, reports and small trusted model are included. Installation is editable; installing a wheel alone does not supply those external assets. The snapshot publication command validates and copies existing evidence locally; it neither trains nor publishes online. A fresh dashboard checkout also initializes the default evidence store automatically from these bundled files. Explicit store/report overrides retain their existing validation behavior. First uncached dashboard scoring takes roughly 20 seconds on the audited Mac.
 
 The app provides shared model/split/population/threshold controls, cohort cross-filtering, diagnostics, global explanations, subgroup uncertainty, public-data browsing and a hypothetical prediction sandbox. Thresholds affect explicitly labelled scenarios; they do not overwrite saved research. Desktop 1440×900 fits without page scrolling; tablet layouts reflow vertically.
 
@@ -120,4 +122,4 @@ Only load maintainer-created artifacts. Checksums and dependency checks catch ac
 
 ## GitHub preparation
 
-Use the prepared project folder described in [release instructions](docs/GITHUB_RELEASE.md), not the enclosing NBA workspace or `.venv`. GitHub Actions runs project checks on pushes and pull requests; consult the repository’s Actions tab for its current status. Cloud hosting and production readiness are separate, unverified scopes. The commit history records actual publication and subsequent changes.
+Use the prepared project folder described in [release instructions](docs/GITHUB_RELEASE.md), not the enclosing NBA workspace or `.venv`. GitHub Actions runs project checks on pushes and pull requests; consult the repository’s Actions tab for its current status. The public research demonstration is hosted on Streamlit Community Cloud (Python 3.12, `app/main.py`); production readiness remains outside this portfolio demonstration. The commit history records actual publication and subsequent changes.
